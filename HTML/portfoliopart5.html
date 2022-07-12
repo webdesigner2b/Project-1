@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="portfoliopart5.css">
+<script src="portfoliopart5.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Emergency Medical Services System</h1>
+        
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand active" aria-current="page" href="portfolio.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="portfolio.html">About EMS</a>
+    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfoliopart2.html">What's Star of Life</a>
+              </li>
+              
+                <li>
+                    <a class="nav-link" aria-current="page" href="portfoliopart3.html">Levels of Care</a>
+                    </li>
+                    <li>
+                      <a class="nav-link" aria-current="page" href="portfoliopart4.html">Courses We Provide</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link active" aria-current="page" href="portfoliopart5.html">Enroll Now!</a>
+                      </li>
+
+                      <li>
+                        <a class="nav-link" aria-current="page" href="portfoliopart6.html">Contact Us</a>
+                      </li>
+              
+              <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      
+      <form class="enroll">
+        <div id="big">
+        
+             <h3>Personal Information:</h3> <br>
+        
+          <label id="firstName"><strong>First name:</strong></label> 
+          <input type="text" name="name" placeholder="e.g. John" required> <br> <br>
+
+          <label id="middleName"><strong>Middle name (OPTIONAL):</strong></label>
+          <input type="text" name="name" placeholder="e.g. Robert"> <br> <br>
+          
+          <label id="lastName"><strong>Last name:</strong></label>
+          <input type="text" name="name" placeholder="e.g. Smith" required> <br> <br>
+
+          <hr>
+
+          <label id="homeAddress"><strong>Home address:</strong></label> <br>
+          <label id="homeStreetName"><strong>Street Name:</strong> </label>
+          <input type="text" name="streetName" id="street2" placeholder="e.g. 1212 Smith St" required> &nbsp;
+
+          <label id="homeCity"><strong>City:</strong> </label>
+          <input type="text" name="city" id="city2" placeholder="e.g. Fontana" required> &nbsp;
+
+          <label id="homeState"><strong>State:</strong> </label> 
+          <input type="text" name="state" id="state2" placeholder="e.g. Michigan" required> <br>
+
+          <label id="homeZipCode"><strong>Zip Code:</strong></label> <br>
+          <input type="number" name="zipCode" id="zip2" placeholder="e.g. 91000" min="00000" max="99999" required> <br> <br>
+
+
+          <label id="shippingAddress"><strong>Shipping Address:</strong></label> <br>
+          <label><input type="checkbox" id="same" onchange="billingFunction()">Same as above </label><br>
+          <label id="shippingStreetName"><strong>Street Name:</strong> </label>
+          <input type="text" name="streetName" id="street1" placeholder="e.g. 1212 Smith St" required> &nbsp;
+
+          <label id="shippingCity"><strong>City:</strong> </label>
+          <input type="text" name="city" id="city1" placeholder="e.g. Fontana" required> &nbsp;
+
+          <label id="shippingState"><strong>State:</strong> </label> 
+          <input type="text" name="state" id="state1" placeholder="e.g. Michigan" required> <br>
+
+          <label id="shippingZipCode"><strong>Zip Code:</strong></label> <br>
+          <input type="number" name="zipCode" id="zip1" placeholder="e.g. 91000" min="00000" max="99999" required> <br> <br>
+
+          <hr>
+          
+       
+          <label id="gender"><strong>Please choose your gender:</strong></label> <br>
+          <label><input type="radio" name="gender" value="male"> Male </label> <br>
+          <label><input type="radio" name="gender" value="female"> Female </label> <br>
+          <label><input type="radio" name="gender" value="preferNotToSay"> Prefer not to say </label> <br> <br>
+
+          <label id="email"><strong>E-mail address:</strong></label>
+          <input type="text" name="email" id="email1" placeholder="e.g. johnsmith@hotmail.com"> <br> <br>
+
+          <label id="emaill2"><strong>Please repeat E-mail address:</strong></label>
+          <input type="text" name="email" id="email2" placeholder="e.g. johnsmith@hotmail.com" required onchange="check()"> <br> <br>
+
+          <label id="birth"><strong>What's your DOB:</strong></label>
+          <input type="date" name="birth"> <br> <br>
+
+                    <hr>
+          </div>
+                  
+          
+          <div id="small">
+          <label id="courses"><strong>Which courses are you willing to enroll with:</strong></label> <br>
+          <label><input type="checkbox" name="courses" value="EMR"> EMR - Emergency Medical Responder </label> <br>
+          <label><input type="checkbox" name="courses" value="EMT"> EMT - Emergency Medical Technician </label> <br>
+          <label><input type="checkbox" name="courses" value="AEMT"> AEMT - Advanced Emergency Medical Technician </label> <br>
+          <label><input type="checkbox" name="courses" value="paramedic"> Paramedic </label> <br> <br>
+
+          <label id="textarea" class="textarea"><strong>Tell us more about yourself & what interest you in becoming a healthcare professional:</strong></label> <br>
+          <textarea> </textarea> <br> <br>
+           
+         <input type="button" id="submit" value="Submit Your Request!" onclick="return check()">
+         </div>
+                 
+      </form>
+      </body>
+      </html>

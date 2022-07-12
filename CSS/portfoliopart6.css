@@ -1,0 +1,89 @@
+body{
+    margin: 1%;
+    padding: 1%;
+    display: block;
+}
+
+header{
+    color: rgb(89, 89, 220);
+    text-align: center;
+    font-family: Franklin Gothic Medium;
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
+}
+
+section{
+    text-align: left;
+    margin: 2%;
+    padding: 2%;
+}
+
+address{
+    margin: 1%;
+    padding: 1%;
+}
+
+ .medic{
+    text-decoration: none;
+    color: rgb(134, 16, 16);
+}
+
+.hr{
+    text-decoration: none;
+    color: rgb(134, 16, 16);
+}
+
+h4{
+    color:rgb(134, 16, 16);
+}
+
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:600px;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+}
+
+
+
+
+.google-maps {
+
+    position: relative;
+
+    padding-bottom: 75%; // This is the aspect ratio
+
+    height: 0;
+
+    overflow: hidden;
+
+}
+
+.google-maps iframe {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+}
+
+iframe{
+    width: 460px;
+    height: 350px;
+    padding: 1%;
+    margin: 1%;
+}
+

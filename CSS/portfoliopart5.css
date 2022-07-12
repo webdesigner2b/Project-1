@@ -1,0 +1,38 @@
+.textarea{
+    width: 50%;
+}
+
+#textarea{
+    width: 40%;
+}
+
+header{
+    color: rgb(89, 89, 220);
+    text-align: center;
+    font-family: cursive;
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
+}
+
+body{
+    margin: 1%;
+    padding: 1%;
+    display: block;
+}
+
+form{
+    font-size: 1em;
+}
+
+@media screen and (min-width:500px){
+    #small{
+        width: 125%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:550px){
+    #big{
+        width:35%;
+    }
+}
+

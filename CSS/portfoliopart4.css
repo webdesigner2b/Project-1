@@ -1,0 +1,36 @@
+ul > li > a{
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h3{
+    color: rgb(89, 89, 220);
+    font-family: Franklin Gothic Medium;
+}
+
+body{
+    margin: 1%;
+    padding: 1%;
+    display: block;
+}
+
+header{
+    color: rgb(89, 89, 220);
+    text-align: center;
+    font-family: Franklin Gothic Medium;
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
+}
+
+section{
+    padding: 2%;
+    margin: 1%;
+    font-size: 1.2em;
+    width: 80%;
+    line-height: 180%;
+}
+
+strong{
+    color: rgb(202, 6, 6);
+}
